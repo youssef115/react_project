@@ -129,6 +129,16 @@ td {
     right:0;
     bottom:100%;
 }
+/*sub text added to the ul */
+.sub-text li{
+    
+    font-size: 14px !important;
+    margin-left: 2em;
+    transition: 0.3s;
+}
+.font-space{
+    margin-right: 8px;
+}
 
 .container {
     position: absolute;

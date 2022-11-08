@@ -1,8 +1,8 @@
 import React from 'react'
 import '../../../App.css'
 import EnseigantValider from './enseignantValider/enseignantValider';
-import EnseigantNonValider from './enseignantNonValider/enseignantNonValider'
-function Enseigant(){
+//import EnseigantNonValider from './enseignantNonValider/enseignantNonValider'
+function Enseigant(props){
  
     return (
   
@@ -11,7 +11,7 @@ function Enseigant(){
         <div className="content-2">
                 <div className="recent-payments">
                     <div className="title">
-                        <h2>List des enseignant Vlider</h2>
+                        <h2>{props.title}</h2>
                         <a href="#" className="btn">Voir touts</a>
                     </div>
                     <table>

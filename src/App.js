@@ -25,29 +25,71 @@ function App() {
             </Body> 
             </>
           }/>
-            
-            <Route exact path="/adminDashBorad/enseignant" element={
+            {/*all the teachers*/}
+            <Route exact path="/adminDashBorad/AllEnseignant" element={
 
               <>
               <SideMenu />
               <BodyHeader/>
               <Body> 
-                  <Enseigant/>  
+                  <Enseigant title="List de tous les enseignants"/>  
               </Body> 
               </>
             }/>
-
-            <Route exact path="/adminDashBorad/etudiant" element={
-
+            {/*only the valid teachers*/}
+            <Route exact path="/adminDashBorad/enseignantValid" element={
               <>
               <SideMenu />
               <BodyHeader/>
                <Body>
-               <Etudiant/>
+               <Enseigant title="List des enseignants valider"/>
+               </Body>
+              </>
+            }/>
+            {/*only the not valid teachers*/}
+            <Route exact path="/adminDashBorad/enseignantNotValid" element={
+              <>
+              <SideMenu />
+              <BodyHeader/>
+               <Body>
+               <Enseigant title="list des enseignants non valider"/>
                </Body>
               </>
             }/>
 
+            {/*all the students*/}
+            <Route exact path="/adminDashBorad/AllEtudiant" element={
+              <>
+              <SideMenu />
+              <BodyHeader/>
+               <Body>
+               <Etudiant title="List de tous les etudiants"/>
+               </Body>
+              </>
+            }/>
+            {/*omly the valid students*/}
+            <Route exact path="/adminDashBorad/etudiantValid" element={
+              <>
+              <SideMenu />
+              <BodyHeader/>
+               <Body>
+               <Etudiant title="List des etudiants valide"/>
+               </Body>
+              </>
+            }/>
+            {/*omly the not valid students*/}
+            <Route exact path="/adminDashBorad/etudiantNotValid" element={
+              <>
+              <SideMenu />
+              <BodyHeader/>
+               <Body>
+               <Etudiant title="List des etudiants non valide"/>
+               </Body>
+              </>
+            }/>
+          
+
+            
         </Routes>
 
       </Router>

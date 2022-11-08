@@ -2,7 +2,7 @@ import React from 'react'
 import '../../../App.css'
 import EtudiantValider from './etudiantValider/etudiantValider';
 import EtudiantNonValider from './etudiantNonValider/etudiantNonVslider'
-function Enseigant(){
+function Etudiant(props){
  
     return (
   
@@ -11,7 +11,7 @@ function Enseigant(){
         <div className="content-2">
                 <div className="recent-payments">
                     <div className="title">
-                        <h2>List des etudiants Vlider</h2>
+                        <h2>{props.title}</h2>
                         <a href="#" className="btn">Voir touts</a>
                     </div>
                     <table>
@@ -76,4 +76,4 @@ function Enseigant(){
     )
 }
 
-export default Enseigant;
+export default Etudiant;
