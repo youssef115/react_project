@@ -3,7 +3,7 @@ import "../../../../App.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faPen,faTrash} from '@fortawesome/free-solid-svg-icons'
 
-function EnseigantValider(props) {
+function EtudiantValider(props) {
   return (
     <>
       
@@ -33,4 +33,4 @@ function EnseigantValider(props) {
     </>
   );
 }
-export default EnseigantValider;
+export default EtudiantValider;

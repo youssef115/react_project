@@ -5,6 +5,7 @@ function BodyHeader (){
     return (
         <>
         {/** the header search bar and the profile images */}
+        <div className="container">
         <div className="header">
             <div className="nav">
                 <div className="search">
@@ -12,7 +13,7 @@ function BodyHeader (){
                     <button type="submit"><img src={require("../../.././res/images/search.png")} alt=""/></button>
                 </div>
                 <div className="user">
-                    <a href="#" className="btn">Add New</a>
+                    {/*<a href="/#" className="btn">Add New</a>*/}
                     <img src={require("../../.././res/images/notifications.png")} alt=""/>
                     <div className="img-case">
                         <img src={require("../../.././res/images/user.png")} alt=""/>
@@ -20,6 +21,7 @@ function BodyHeader (){
                 </div>
             </div>
         </div>
+    </div>
         </>
     )
 }

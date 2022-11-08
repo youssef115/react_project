@@ -1,20 +1,14 @@
 import React from 'react';
-import BodyHeader from '../bodyHeader/bodyHeader';
-
-import Cards from '../cards/Cards';
-import Enseigant from '../Enseigant/enseignant';
 import '../../../App.css'
 
-function Body(){
+function Body(props){
     return (
         <>
-            <div className="container">
-                 <BodyHeader/>
-                <div className="content">
-                    <Cards/>
-                    <Enseigant/>
-                </div>
-             </div>
+        <div className="container">
+                 <div className="content">
+                    {props.children}
+                    </div>
+              </div>
             </>
     );
 }

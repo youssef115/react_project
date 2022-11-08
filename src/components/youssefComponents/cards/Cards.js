@@ -19,6 +19,7 @@ function Cards(){
      
     return (
         <>
+        
         <div className="cards">
                 <div className="card">
                     <div className="box">
@@ -63,6 +64,7 @@ function Cards(){
                     </div>
                 </div>
             </div>
+            
         </>
     );
 }
