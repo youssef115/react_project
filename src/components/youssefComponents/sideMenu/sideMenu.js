@@ -1,7 +1,7 @@
 import React from "react";
 import {Link}from 'react-router-dom'
 import SideMenuItems from "../sideMenuItems/SideMenuItems";
-import {faUserCheck,faUserXmark,faUsers, faShuttleSpace} from '@fortawesome/free-solid-svg-icons'
+import {faUserCheck,faUserXmark,faUsers} from '@fortawesome/free-solid-svg-icons'
 import '../../../App.css'
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
