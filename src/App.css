@@ -140,6 +140,15 @@ td {
     margin-right: 8px;
 }
 
+.unselectable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} 
+
 .container {
     position: absolute;
     right: 0;
