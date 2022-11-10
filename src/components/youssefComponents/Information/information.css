@@ -1,0 +1,83 @@
+body.active-modal {
+    overflow-y: hidden ;
+}
+
+.btn-modal {
+    padding: 10px 20px ;
+    display: block ;
+    margin: 100px auto 0 ;
+    font-size: 18px ;
+}
+
+.modal, .overlay {
+    width: 100vw ;
+    height: 100vh ;
+    top: 0 ;
+    left: 0 ;
+    right: 0 ;
+    bottom: 0 ;
+    position: fixed ;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8) ;
+}
+.modal-content {
+    position: absolute ;
+    color:black;
+    font-weight: 600;
+    top: 40% ; 
+    left: 50% ;
+    transform: translate(-50%, -50%) ;
+    line-height: 1.4 ;
+    background: #f1f1f1 ;
+    padding: 14px 28px ;
+    border-radius: 15px ;
+    width: 600px ;
+    height: 300px ;
+}
+
+.close-modal {
+    position: relative ;
+    background-color: #f05462;
+    color:white;
+    top: 120px ;
+    right: 260px ;
+    padding: 5px 7px ;
+    border:1px solid #f05462;
+    border-radius: 5px;
+}
+.close-modal:hover{
+    background-color: white;
+    color:#f05462;
+    
+
+}
+.valid-modal {
+    position:absolute;
+    background-color: #4CD45C;
+    border:1px solid #4CD45C;
+    border-radius: 15px;
+    color:white;
+    top:10px;
+    right:10px;
+    padding: 5px 7px;
+}
+.valid-modal:hover{
+    background-color: white;
+    color:#4CD45C;
+}
+.reject-modal{
+ position: absolute;
+ background-color: #f05462;
+ border:1px solid #f05462;
+ border-radius: 15px;
+ color:white;
+ top:10px;
+ left:10px;
+ padding:5px 7px;
+}
+.reject-modal:hover{
+    background-color: white;
+    color:#f05462;
+}

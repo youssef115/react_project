@@ -148,6 +148,11 @@ td {
     -ms-user-select: none;
     user-select: none;
 } 
+.hover-table:hover{
+    background-color: rgb(237, 236, 236);
+    box-shadow: inset 0 0 0 99999px rgba(188, 188, 188, 0.2);;
+}
+
 
 .container {
     position: absolute;

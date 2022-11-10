@@ -7,7 +7,7 @@ function EtudiantValider(props) {
   return (
     <>
       
-      <tr>
+      <tr className="hover-table">
         <td>{props.cin}</td>
         <td>{props.nom}</td>
         <td>{props.prenom}</td>

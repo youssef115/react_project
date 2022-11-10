@@ -29,7 +29,8 @@ function Enseigant(props){
                         </thead>
                         <tbody>
                             <EnseigantValider cin={12345678} nom ="mostpha" prenom="ben salah" email="japa@gmail.com" telephone={12345678} secialite="sell lift"/>
-                            <EnseigantValider cin={12345678} nom ="mostpha" prenom="ben salah" email="japa@gmail.com" telephone={12345678} secialite="sell lift"/>
+                            <EnseigantValider cin={84567898} nom ="mostpha" prenom="ben salah" email="japa@gmail.com" telephone={84567898} secialite="sell lift"/>
+                            <EnseigantValider cin={65483515} nom ="yassine" prenom="ben ben" email="yassine@gmail.com" telephone={65483515} secialite="oop"/>
                         </tbody>
                         <tfoot></tfoot>
                     </table>
