@@ -22,14 +22,15 @@ function Etudiant(props){
                             <th>prenom</th>
                             <th>email</th>
                             <th>telephone</th>
-                            <th>secialite</th>
+                            <th>classe</th>
                             <th>Option</th>
                      
                         </tr>
                         </thead>
                         <tbody>
-                            <EtudiantValider cin={12345678} nom ="mostpha" prenom="ben salah" email="japa@gmail.com" telephone={12345678} secialite="sell lift"/>
-                            <EtudiantValider cin={12345678} nom ="mostpha" prenom="ben salah" email="japa@gmail.com" telephone={12345678} secialite="sell lift"/>
+                            {/* <EtudiantValider cin={12345678} nom ="mostpha" prenom="ben salah" email="japa@gmail.com" telephone={12345678} secialite="sell lift"/>
+                            <EtudiantValider cin={12345678} nom ="mostpha" prenom="ben salah" email="japa@gmail.com" telephone={12345678} secialite="sell lift"/> */}
+                            <EtudiantValider/>
                         </tbody>
                         <tfoot></tfoot>
                     </table>

@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{Suspense } from "react";
 import axios from "axios";
 function Cards(){
     
@@ -19,7 +19,7 @@ function Cards(){
      
     return (
         <>
-        
+        <Suspense fallback={<>loading...</>}>
         <div className="cards">
                 <div className="card">
                     <div className="box">
@@ -64,7 +64,7 @@ function Cards(){
                     </div>
                 </div>
             </div>
-            
+            </Suspense>
         </>
     );
 }

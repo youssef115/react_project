@@ -1,35 +1,52 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "../../../../App.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye,faPen,faTrash} from '@fortawesome/free-solid-svg-icons'
+
+import {useLocation} from 'react-router-dom'
+import axios from 'axios';
+import TableButtons from "../../tablesButtons/tablesButtons";
 
 function EtudiantValider(props) {
+  const location=useLocation()
+    const [etudiant,setEtudiant]=React.useState([])
+    
+    useEffect(()=>{
+        //console.log(location)
+        if(location.pathname==='/adminDashBorad/AllEtudiant'){
+            axios.get("http://localhost:5000/etudiant/").then(res=>{
+                //console.log(res.data)
+                setEtudiant(res.data)
+
+            }
+            )
+        }else if(location.pathname==="/adminDashBorad/etudiantValid"){
+            axios.get("http://localhost:5000/etudiant/valid").then(res=>{
+                //console.log(res.data)
+                setEtudiant(res.data)
+            })
+        }else if(location.pathname==="/adminDashBorad/etudiantNotValid"){
+            axios.get("http://localhost:5000/etudiant/notValid").then(res=>{
+                //console.log(res.data)
+                setEtudiant(res.data)
+            })
+        }
+    },[location])
   return (
     <>
-      
+      {etudiant===[]?<>loading...</>:etudiant.map(item=>(
       <tr className="hover-table">
-        <td>{props.cin}</td>
-        <td>{props.nom}</td>
-        <td>{props.prenom}</td>
-        <td>{props.email}</td>
-        <td>{props.telephone}</td>
-        <td>{props.secialite}</td>
+        <td>{item.ncin}</td>
+        <td>{item.nom}</td>
+        <td>{item.prenom}</td>
+        <td>{item.email}</td>
+        <td>{item.ntel}</td>
+        <td>{item.classe}</td>
         
         <td>
-          <button  className="btn fontawesomeView">
-          <FontAwesomeIcon icon={faEye}/>
-          </button>
-          
-          <button  className="btn fontawesomeEdit" >
-            
-            <FontAwesomeIcon icon={faPen}  />
-          </button>
-          <button  className="btn ">
-          <FontAwesomeIcon icon={faTrash}/>
-          </button>
+         <TableButtons cin={item.ncin}/>
          
         </td>
       </tr>
+      ))}
     </>
   );
 }

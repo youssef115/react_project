@@ -2,7 +2,10 @@ import React from 'react'
 import '../../../App.css'
 import EnseigantValider from './enseignantValider/enseignantValider';
 //import EnseigantNonValider from './enseignantNonValider/enseignantNonValider'
+//to get the route address
+
 function Enseigant(props){
+    
  
     return (
   
@@ -28,10 +31,10 @@ function Enseigant(props){
                         </tr>
                         </thead>
                         <tbody>
-                            <EnseigantValider cin={12345678} nom ="mostpha" prenom="ben salah" email="japa@gmail.com" telephone={12345678} secialite="sell lift"/>
-                            <EnseigantValider cin={84567898} nom ="mostpha" prenom="ben salah" email="japa@gmail.com" telephone={84567898} secialite="sell lift"/>
-                            <EnseigantValider cin={65483515} nom ="yassine" prenom="ben ben" email="yassine@gmail.com" telephone={65483515} secialite="oop"/>
-                        </tbody>
+
+                            <EnseigantValider />
+                      
+                        </tbody> 
                         <tfoot></tfoot>
                     </table>
                 </div>
@@ -73,7 +76,7 @@ function Enseigant(props){
             */}
             </div>
            
-            
+           
     </>
     )
 }
