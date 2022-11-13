@@ -34,18 +34,18 @@ body.active-modal {
     padding: 14px 28px ;
     border-radius: 15px ;
     width: 600px ;
-    height: 300px ;
+    height: 450px ;
 }
 
 .close-modal {
     position: relative ;
     background-color: #f05462;
     color:white;
-    top: 120px ;
-    right: 260px ;
-    padding: 5px 7px ;
+    top: -5px ;
+    right: 2px ;
+    padding: 20px 10px ;
     border:1px solid #f05462;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 .close-modal:hover{
     background-color: white;
@@ -80,4 +80,16 @@ body.active-modal {
 .reject-modal:hover{
     background-color: white;
     color:#f05462;
+}
+
+.download-file{
+    margin-left:80%;
+    color:black;
+    border:1px solid rgb(100, 173, 236);
+    border-radius: 5px;
+}
+.download-file:hover{
+    background: rgb(100,173,236);
+    color:white
+
 }

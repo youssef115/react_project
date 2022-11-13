@@ -11,7 +11,7 @@ function TableButtons(props){
         <>
        
         <button  className="btn fontawesomeView" onClick={()=>setShow(!show)}>
-        {show? <Information cin={props.cin}/>:null}
+        {show? <Information cin={props.cin} type={props.type}/>:null}
         <FontAwesomeIcon icon={faEye}/>
         </button>
         

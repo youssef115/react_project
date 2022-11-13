@@ -42,7 +42,7 @@ function EtudiantValider(props) {
         <td>{item.classe}</td>
         
         <td>
-         <TableButtons cin={item.ncin}/>
+         <TableButtons cin={item.ncin} type="isEtudiant"/>
          
         </td>
       </tr>

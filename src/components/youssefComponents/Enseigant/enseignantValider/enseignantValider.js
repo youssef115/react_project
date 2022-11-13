@@ -38,7 +38,7 @@ function EnseigantValider() {
     
       {/* {console.log("enseigant ",enseignant)} */}
     {enseignant===[]?<>loading..</>:enseignant?.map(item=>(
-      <tr className="hover-table">
+      <tr className="hover-table" key={item?.ncin}>
         {console.log("item ",item.nom)}
         <td>{item?.ncin}</td>
         <td>{item?.nom}</td>
@@ -47,7 +47,7 @@ function EnseigantValider() {
         <td>{item?.ntel}</td>
         <td>{item?.specialite}</td>        
         <td>
-         <TableButtons cin={item?.ncin}/>
+         <TableButtons cin={item?.ncin} type="isEnseignant"/>
         </td>
         
       </tr>
