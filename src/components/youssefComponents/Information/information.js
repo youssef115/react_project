@@ -10,14 +10,21 @@ function Information (props){
     
   },[props.cin,props.type])
 
+  const handleInfo=()=>{
+      props.handle(false)
+  }
+
+  
+
     return (
         <>
         {console.log(user)}
         <div className="modal">
         <div  className="overlay">
         <div className="modal-content">
-          <h2>les information de {props.cin}</h2>
+          <h2 className='center-title'>les information de {props.cin}</h2>
           <table>
+            <tbody>
             <tr>
              <td>nom :</td>
              <td>{user.nom}</td>
@@ -53,10 +60,10 @@ function Information (props){
               <td>etat actuelle</td>
               <td style={user.etat?{color:"green"}:{color:"red"}}>{user.etat? "compte validé ":"compte non validé"}</td>
             </tr>
-                
+            </tbody>
           </table>
           <button className='download-file' download={user.fichier}>telecharger les documents</button>
-          <button className="close-modal" >
+          <button className="close-modal" onClick={handleInfo}>
             CLOSE
           </button>
           <button className='valid-modal'> valider</button>
