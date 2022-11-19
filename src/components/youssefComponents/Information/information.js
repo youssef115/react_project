@@ -16,9 +16,12 @@ function Information (props){
 
   
 
+  
+
     return (
         <>
         {console.log(user)}
+        
         <div className="modal">
         <div  className="overlay">
         <div className="modal-content">
