@@ -24,6 +24,7 @@ function EditInfo(props){
     const [ville,setVille]=useState("")
     const [specialite,setSpecialite]=useState("")
     const [classe,setClasse]=useState("")    
+   
     //this function used to add the data of the teacher so we can add it then in the form
     const handledataEnseignant=(data)=>{
         setUser(data)
@@ -85,7 +86,7 @@ function EditInfo(props){
       axios.put(`http://localhost:5000/etudiant/updateEtudiant/${user._id}`,etudiantObj)
       .then(console.log(etudiantObj,"has been added to the database"))
      }
-    
+      window.location.reload(false)
   }
     
     useEffect(()=>{

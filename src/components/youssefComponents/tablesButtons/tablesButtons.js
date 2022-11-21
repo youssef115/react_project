@@ -41,6 +41,7 @@ function TableButtons(props){
             props.type==="isEnseignant"? 
             axios.delete(`http://localhost:5000/enseignant/deleteEnseigant/${props.cin}`):
             axios.delete(`http://localhost:5000/etudiant/deleteEtudiant/${props.cin}`)
+            window.location.reload(false)
       }
  
     return (

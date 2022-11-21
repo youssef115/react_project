@@ -25,7 +25,7 @@ function Enseigant(props){
                             <th>prenom</th>
                             <th>email</th>
                             <th>telephone</th>
-                            <th>secialite</th>
+                            <th>specialite</th>
                             <th>Option</th>
                      
                         </tr>

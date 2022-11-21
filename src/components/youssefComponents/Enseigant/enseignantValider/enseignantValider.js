@@ -7,6 +7,8 @@ import axios from 'axios';
 function EnseigantValider() {
   const location=useLocation()
     const [enseignant,setEnseignant]=React.useState([])
+  
+
     
     useEffect(()=>{
         //console.log(location)
@@ -47,7 +49,7 @@ function EnseigantValider() {
         <td>{item?.ntel}</td>
         <td>{item?.specialite}</td>        
         <td>
-         <TableButtons cin={item?.ncin} type="isEnseignant"/>
+         <TableButtons cin={item?.ncin} type="isEnseignant"  />
         </td>
         
       </tr>

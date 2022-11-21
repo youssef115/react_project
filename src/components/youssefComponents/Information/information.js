@@ -14,8 +14,20 @@ function Information (props){
       props.handle(false)
   }
 
-  
-
+  const handleValidate=()=>{
+    props.type==="isEnseignant"?
+    axios.put(`http://localhost:5000/enseignant/validateUser/${props.cin}`,{etat:true})
+      .then(console.log("the teacher ",props.cin," has been validate now ")):
+      axios.put(`http://localhost:5000/etudiant/validateUser/${props.cin}`,{etat:true})
+      .then(console.log("the student ",props.cin," has been validate now "))
+      window.location.reload(false)
+  }
+  const handleRejeter=()=>{
+    props.type==="isEnseignant"? 
+    axios.delete(`http://localhost:5000/enseignant/deleteEnseigant/${props.cin}`):
+    axios.delete(`http://localhost:5000/etudiant/deleteEtudiant/${props.cin}`)
+    window.location.reload(false)
+  }
   
 
     return (
@@ -69,8 +81,8 @@ function Information (props){
           <button className="close-modal" onClick={handleInfo}>
             CLOSE
           </button>
-          <button className='valid-modal'> valider</button>
-          <button className='reject-modal'> rejeter</button>
+          {user.etat?null:<button className='valid-modal' onClick={handleValidate}> valider</button>}
+          {user.etat?null:<button className='reject-modal' onClick={handleRejeter}> rejeter</button>}
         </div>
         </div>
       </div>
