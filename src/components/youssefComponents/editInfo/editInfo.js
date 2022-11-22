@@ -13,6 +13,17 @@ function EditInfo(props){
       //console.log("modal val ",modal)
       props.handle(false)
     }
+   
+    
+      // const handleValidation=()=>{
+      //   var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+      //    if(nom.length<5 || prenom.length<5 || cin.length<8||cin.length>8 || numeroTelephone.length<8||numeroTelephone>8 
+      //     ||email.length<10|| login.length<8 || ville.length<4){
+      //     return setValidation(1)
+      //    }else if (!email.match(pattern)){
+      //     return setValidation(-1)
+      //    }else setValidation(2)
+      // }
 
     const [user,setUser]=useState([]);
     const [nom,setNom]=useState("");
@@ -23,7 +34,8 @@ function EditInfo(props){
     const [login,setLogin]=useState("")
     const [ville,setVille]=useState("")
     const [specialite,setSpecialite]=useState("")
-    const [classe,setClasse]=useState("")    
+    const [classe,setClasse]=useState("")
+     
    
     //this function used to add the data of the teacher so we can add it then in the form
     const handledataEnseignant=(data)=>{
@@ -57,7 +69,7 @@ function EditInfo(props){
   //this function is used to submit form and do the update 
   const handleSubmit=(e)=>{
     e.preventDefault()
-    alert("you want to submit ?"); e.preventDefault(); 
+    //alert("you want to submit ?");
      if(props.type==="isEnseignant"){
       const enseignantObj={
         nom:nom,
@@ -87,7 +99,9 @@ function EditInfo(props){
       .then(console.log(etudiantObj,"has been added to the database"))
      }
       window.location.reload(false)
-  }
+ 
+
+}
     
     useEffect(()=>{
       if(props.type==="isEnseignant") axios.get(`http://localhost:5000/enseignant/getOne/${props.cin}`)
@@ -111,6 +125,7 @@ function EditInfo(props){
             <div className="input-box">
               <span className="details">Nom</span>
               <input type="text"  required  defaultValue={nom}  onChange={(e)=>setNom(e.target.value)}/>
+              
             </div>
 
             <div className="input-box">

@@ -6,6 +6,8 @@ import Etudiant from '../etudiant/etudiant'
 import Body from "../body/body";
 import SideMenu from "../sideMenu/sideMenu";
 import {Route,Routes} from "react-router-dom";
+import MyProfile from '../profile/myprofile/myProfile';
+import EditProfile from '../profile/editProfile/editProfile';
 
 function Youssef() {
   return (
@@ -72,13 +74,34 @@ function Youssef() {
                </Body>
               </>
             }/>
-            {/*omly the not valid students*/}
+            {/*only the not valid students*/}
             <Route exact path="/adminDashBorad/etudiantNotValid" element={
               <>
               <SideMenu />
               <BodyHeader/>
                <Body>
                <Etudiant title="List des etudiants non valide"/>
+               </Body>
+              </>
+            }/>
+            {/* my profil*/}
+            <Route exact path="/adminDashBorad/myProfil" element={
+              <>
+              <SideMenu />
+              <BodyHeader/>
+               <Body>
+                  
+                  <MyProfile/>
+               </Body>
+              </>
+            }/>
+            {/*edit profil*/}
+            <Route exact path="/adminDashBorad/editProfil" element={
+              <>
+              <SideMenu />
+              <BodyHeader/>
+               <Body>
+                  <EditProfile/>
                </Body>
               </>
             }/>
