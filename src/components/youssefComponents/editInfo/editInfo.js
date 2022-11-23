@@ -168,7 +168,7 @@ function EditInfo(props){
                 
               </div>
               <div className="button">
-                <input type="submit" value="mise a jour"/>
+                <input type="submit" value="mettre a jour"/>
               </div>
               </form>
                 <button className='close-modal-edit' onClick={handleEdit}>close </button>

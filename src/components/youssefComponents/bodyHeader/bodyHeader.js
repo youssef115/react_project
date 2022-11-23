@@ -1,10 +1,12 @@
 import React from 'react';
 import '../../../App.css'
+
 import Dropmenu from './dropmenu';
 function BodyHeader (){
-
+    
     return (
         <>
+        
         {/** the header search bar and the profile images */}
         <div className="container">
         <div className="header">
@@ -13,7 +15,7 @@ function BodyHeader (){
                     <input type="text" placeholder="Search.."/>
                     <button type="submit"><img src={require("../../.././res/images/search.png")} alt=""/></button>
                 </div>
-                <Dropmenu/>
+                <Dropmenu />
                {/*<div className="user">
                     /*<a href="/#" className="btn">Add New</a>
                     <img src={require("../../.././res/images/notifications.png")} alt=""/>
