@@ -9,6 +9,7 @@ import { BrowserRouter as Router} from "react-router-dom";
 //import SideMenu from "./components/youssefComponents/sideMenu/sideMenu";
 import Youssef from "./components/youssefComponents/youssefAll/youssef";
 import "./App.css";
+import Homepage from "./components/mariem/homepage/homepage";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <>
       <Router>
         <Youssef/>
+        <Homepage/>
       </Router>
     </>
   );
