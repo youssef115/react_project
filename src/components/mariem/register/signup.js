@@ -301,7 +301,7 @@ useEffect(() => {
           </div>
           <button class="button-signup" type="submit" onClick={register} >Enregistrer</button>
           <div class="footer-link ">
-            <span>Vous etes dejà memebre? <a href="/login">Connexion</a></span>
+            <span className="span1">Vous etes dejà memebre? <a href="/login" className="a1">Connexion</a></span>
             </div>
         </div>
 

@@ -98,7 +98,7 @@ const Login = () => {
 
           <button  class="button-login"type="submit" onClick={login} >Connexion</button>
           <div class="footer-link ">
-            <span>Vous etes dejà memebre? <a href="/register">Inscription</a></span>
+            <span className="span1">Vous etes dejà memebre? <a href="/register" className="a1">Inscription</a></span>
           </div>
         </div>
 

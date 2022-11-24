@@ -11,6 +11,7 @@ function SideMenuSubItems(props){
                 <motion.div
                 initial={{ opacity:0 }}
                 animate={{ opacity:1 }}
+                padding= {{padding:0}}
                 transition={{ duration: 1 }}
               >
               
