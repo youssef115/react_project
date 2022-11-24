@@ -1,21 +1,16 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-body {
+
+/* body {
   padding: 1em;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   color: #b9b9b9;
   background-color: #e3e3e3;
-}
+} */
 h4 {
   color: #d72020;
 }
 input,
-input[type="radio"] + label,
-input[type="checkbox"] + label::before
+input[type="radio"] + label, label::before
  {
   width: 100%;
   padding: 1em;
@@ -124,7 +119,7 @@ input:checked + label:after {
   transition: 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-.container {
+.container-login {
   max-width: 38em;
   padding: 1em 3em 2em 3em;
   margin: 0em auto;
@@ -143,35 +138,11 @@ input:checked + label:after {
 .row:after {
   clear: both;
 }
-.col-half {
-  padding-right: 10px;
-  float: left;
-  width: 50%;
-}
-.col-half:last-of-type {
-  padding-right: 0;
-}
-.col-third {
-  padding-right: 10px;
-  float: left;
-  width: 33.33333333%;
-}
-.col-third:last-of-type {
-  padding-right: 0;
-}
-@media only screen and (max-width: 540px) {
-  .col-half {
-    width: 100%;
-    padding-right: 0;
-  }
-}
 
-.onerow{
-  display: flex;
-  justify-content: space-between;
-  margin: 1px 0;
-}
-button{
+
+
+
+.button-login{
   background-color: #d72020;
   color: #fff;
   border-color: #d72020;
@@ -196,16 +167,13 @@ span {
   line-height: 28px;
   color: #1a1f36;
 }
-.footer-link span {
-  font-size: 14px;
-  text-align: center;
-}
+
 a {
   color: #697386;
   font-weight: 600;
   margin: 0 10px;
 }
-.container .thumbnail img {
+.container-login .thumbnail img {
   display: block;
   width: 100%;
 }

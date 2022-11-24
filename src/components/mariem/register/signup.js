@@ -136,7 +136,7 @@ useEffect(() => {
   }
 
   return (
-    <div class="container" >
+    <div class="container-signup" >
       <form onSubmit={handleSubmit } enctype="multipart/form-data">
         <div class="row">
           <h4>Créer compte</h4>
@@ -299,7 +299,7 @@ useEffect(() => {
             />
             <div class="input-icon"><i class="fa fa-file"></i></div>
           </div>
-          <button type="submit" onClick={register} >Enregistrer</button>
+          <button class="button-signup" type="submit" onClick={register} >Enregistrer</button>
           <div class="footer-link ">
             <span>Vous etes dejà memebre? <a href="/login">Connexion</a></span>
             </div>

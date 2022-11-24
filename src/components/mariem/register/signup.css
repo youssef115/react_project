@@ -1,20 +1,9 @@
-/* 64ac15 */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-body {
-  padding: 1em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  color: #b9b9b9;
-  background-color: #e3e3e3;
-}
+
+
 h4 {
   color: #d72020;
 }
-input,
+
 input[type="radio"] + label,
 input[type="checkbox"] + label::before
  {
@@ -125,7 +114,7 @@ input:checked + label:after {
   transition: 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-.container {
+.container-signup {
   max-width: 38em;
   padding: 1em 3em 2em 3em;
   margin: 0em auto;
@@ -144,35 +133,14 @@ input:checked + label:after {
 .row:after {
   clear: both;
 }
-.col-half {
-  padding-right: 10px;
-  float: left;
-  width: 50%;
-}
-.col-half:last-of-type {
-  padding-right: 0;
-}
-.col-third {
-  padding-right: 10px;
-  float: left;
-  width: 33.33333333%;
-}
-.col-third:last-of-type {
-  padding-right: 0;
-}
-@media only screen and (max-width: 540px) {
-  .col-half {
-    width: 100%;
-    padding-right: 0;
-  }
-}
+
 
 .onerow{
   display: flex;
   justify-content: space-between;
   margin: 1px 0;
 }
-button{
+.button-signup{
   background-color: #d72020;
   color: #fff;
   border-color: #d72020;
@@ -183,7 +151,7 @@ button{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 
 }

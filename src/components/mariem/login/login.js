@@ -59,7 +59,7 @@ const Login = () => {
 
 
   return (
-    <div class="container">
+    <div class="container-login">
       <div class="thumbnail"><img src={require("../../.././res/images/logo.PNG")} /></div>
       <form onSubmit={handleSubmit}>
         <div class="row">
@@ -96,7 +96,7 @@ const Login = () => {
           </div>
 
 
-          <button type="submit" onClick={login} >Connexion</button>
+          <button  class="button-login"type="submit" onClick={login} >Connexion</button>
           <div class="footer-link ">
             <span>Vous etes dejà memebre? <a href="/register">Inscription</a></span>
           </div>
