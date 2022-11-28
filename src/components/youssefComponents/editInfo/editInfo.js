@@ -124,37 +124,38 @@ function EditInfo(props) {
 
                 <div className="input-box">
                   <span className="details">Nom</span>
-                  <input type="text" required defaultValue={nom} onChange={(e) => setNom(e.target.value)} />
+                  <input type="text" maxLength={20} required defaultValue={nom} onChange={(e) => setNom(e.target.value)} />
 
                 </div>
 
                 <div className="input-box">
                   <span className="details">Prenom</span>
-                  <input type="text" required defaultValue={prenom} onChange={(e) => setPrenom(e.target.value)} />
+                  <input type="text" maxLength={30} required defaultValue={prenom} onChange={(e) => setPrenom(e.target.value)} />
                 </div>
                 <div className="input-box">
                   <span className="details">CIN</span>
-                  <input type="text" required defaultValue={cin} onChange={(e) => setCin(e.target.value)} />
+                  <input type="number" minLength={8} maxLength={8} required defaultValue={cin} onChange={(e) => setCin(e.target.value)} />
                 </div>
                 <div className="input-box">
                   <span className="details">Numero</span>
-                  <input type="text" required defaultValue={numeroTelephone} onChange={(e) => setNumeroTelephone(e.target.value)} />
+                  <input type="number" minLength={8} maxLength={8} required defaultValue={numeroTelephone} onChange={(e) => setNumeroTelephone(e.target.value)} />
                 </div>
                 <div className="input-box">
                   <span className="details">Email</span>
-                  <input type="text" required defaultValue={email} onChange={(e) => setEmail(e.target.value)} />
+                  <input type="email" pattern='^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$'
+                  minLength={10} maxLength={35} required defaultValue={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div className="input-box">
                   <span className="details">Login</span>
-                  <input type="text" required defaultValue={login} onChange={(e) => setLogin(e.target.value)} />
+                  <input type="text" minLength={5} maxLength={20} required defaultValue={login} onChange={(e) => setLogin(e.target.value)} />
                 </div>
                 <div className="input-box">
                   <span className="details">Ville</span>
-                  <input type="text" required defaultValue={ville} onChange={(e) => setVille(e.target.value)} />
+                  <input type="text" minLength={2} maxLength={20} required defaultValue={ville} onChange={(e) => setVille(e.target.value)} />
                 </div>
                 <div className="input-box">
                   <span className="details">{props.type === "isEnseignant" ? "Secialite" : "classe"}</span>
-                  <input type="text" required defaultValue={props.type === "isEnseignant" ? specialite : classe} onChange={(e) => { props.type === "isEnseignant" ? setSpecialite(e.target.value) : setClasse(e.target.value) }} />
+                  <input type="text" minLength={3} maxLength={20} required defaultValue={props.type === "isEnseignant" ? specialite : classe} onChange={(e) => { props.type === "isEnseignant" ? setSpecialite(e.target.value) : setClasse(e.target.value) }} />
                 </div>
                 {/*make it one components*/}
                 {/* <Items inputName="Nom" data={user.nom} />

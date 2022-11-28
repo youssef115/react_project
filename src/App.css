@@ -406,6 +406,9 @@ ul{
     transform: translateY(0);
     transition: var(--speed) ease;
   }
+  .dropdown-menu.active li {
+    padding: 18px 0;
+}
   
   .dropdown-menu.inactive{
     opacity: 0;

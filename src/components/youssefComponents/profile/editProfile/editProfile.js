@@ -65,21 +65,21 @@ import axios from 'axios'
         <div className="user-details ">
         <div className="input-box">
           <span className="details">Nom</span>
-          <input type="text"  required id="nom"  defaultValue={admin.nom} onChange={handleChangeNom}/>
+          <input type="text" minLength={3} maxLength={20} required id="nom"  defaultValue={admin.nom} onChange={handleChangeNom}/>
           
         </div>
 
         <div className="input-box">
           <span className="details">Prenom</span>
-          <input type="text"  required id="prenom"  defaultValue={admin.prenom}  onChange={handleChangeNom}/>
+          <input type="text" minLength={5} maxLength={20} required id="prenom"  defaultValue={admin.prenom}  onChange={handleChangeNom}/>
         </div>
         <div className="input-box">
           <span className="details">login</span>
-          <input type="text"  required  id="login" defaultValue={admin.login} onChange={handleChangeNom}/>
+          <input type="text" minLength={5} maxLength={20} required  id="login" defaultValue={admin.login} onChange={handleChangeNom}/>
         </div>
         <div className="input-box">
           <span className="details">mot de passe</span>
-          <input type="password"  required id="password" defaultValue={admin.mot_de_passe} onChange={handleChangeNom}/>
+          <input type="password" minLength={8}  required id="password" defaultValue={admin.mot_de_passe} onChange={handleChangeNom}/>
         </div>
         
           
