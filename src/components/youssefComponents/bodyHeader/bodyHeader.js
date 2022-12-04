@@ -8,7 +8,7 @@ function BodyHeader (){
         <>
         
         {/** the header search bar and the profile images */}
-        <div className="container">
+        <div className="containerr">
         <div className="header">
             <div className="nav">
                 <div className="search">

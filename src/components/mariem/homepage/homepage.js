@@ -3,6 +3,7 @@ import "./homepage.css";
 import {Route,Routes} from "react-router-dom";
 import Login from "../login/login";
 import SignUp from "../register/signup";
+import Home  from "../../salma/Home.jsx";
 
 
 const Homepage = () => {
@@ -24,6 +25,13 @@ const Homepage = () => {
                <Login title="Connexion"/>
               
             }/>
+
+        <Route exact path="/" element={
+              
+             
+              <Home title="Home"/>
+             
+           }/>
              <Route exact path="/register" element={
               
               

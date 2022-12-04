@@ -25,6 +25,7 @@ h2 {
 h3 {
     color: #999;
 }
+p{color: black;}
 
 .btn {
     background: #f05462;
@@ -160,7 +161,7 @@ td {
 }
 
 
-.container {
+.containerr {
     position: absolute;
     right: 0;
     width: 80vw;
@@ -168,7 +169,7 @@ td {
     background: #f1f1f1;
 }
 
-.container .header {
+.containerr .header {
     position: fixed;
     top: 0;
     right: 0;
@@ -182,20 +183,20 @@ td {
     z-index: 1;
 }
 
-.container .header .nav {
+.containerr .header .nav {
     width: 90%;
     display: flex;
     align-items: center;
 }
 
-.container .header .nav .search {
+.containerr .header .nav .search {
     flex: 3;
     display: flex;
     
     justify-content: center;
 }
 
-.container .header .nav .search input[type=text] {
+.containerr .header .nav .search input[type=text] {
     border: none;
     border-top-left-radius: 8px;
     border-bottom-left-radius:8px;
@@ -204,7 +205,7 @@ td {
     width: 50%;
 }
 
-.container .header .nav .search button {
+.containerr .header .nav .search button {
     width: 40px;
     height: 40px;
     border-top-right-radius:8px;
@@ -215,7 +216,7 @@ td {
     justify-content: center;
 }
 
-.container .header .nav .search button img {
+.containerr .header .nav .search button img {
     width: 30px;
     height: 30px;
 }
@@ -224,25 +225,25 @@ img:hover{
     border-radius: 25px;
 }
 
-.container .header .nav .user {
+.containerr .header .nav .user {
     flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container .header .nav .user img {
+.containerr .header .nav .user img {
     width: 40px;
     height: 40px;
 }
 
-.container .header .nav .user .img-case {
+.containerr .header .nav .user .img-case {
     position: relative;
     width: 50px;
     height: 50px;
 }
 
-.container .header .nav .user .img-case img {
+.containerr .header .nav .user .img-case img {
     position: absolute;
     top: 0;
     left: 0;
@@ -250,14 +251,14 @@ img:hover{
     height: 100%;
 }
 
-.container .content {
+.containerr .content {
     position: relative;
     margin-top: 10vh;
     min-height: 90vh;
     background: #f1f1f1;
 }
 
-.container .content .cards {
+.containerr .content .cards {
     padding: 20px 15px;
     display: flex;
     align-items: center;
@@ -266,7 +267,7 @@ img:hover{
 }
 
 
-.container .content .cards .card {
+.containerr .content .cards .card {
     width:33em; /*550px 250px*/
     height: 250px;/*150px*/
     background: white;
@@ -278,11 +279,11 @@ img:hover{
     transition: 1s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.container .content .cards .card:hover{
+.containerr .content .cards .card:hover{
     background: rgb(255, 217, 217);
 }
 
-.container .content .content-2 {
+.containerr .content .content-2 {
     margin-top: 120px !important; /*add to make space from techer contents and the body-header*/
     min-height: 60vh;
     display: flex;
@@ -291,7 +292,7 @@ img:hover{
     flex-wrap: wrap;
 }
 
-.container .content .content-2 .recent-payments {
+.containerr .content .content-2 .recent-payments {
     min-height: 50vh;
     flex: 5;
     border-radius: 15px;
@@ -302,7 +303,7 @@ img:hover{
     flex-direction: column;
 }
 
-.container .content .content-2 .new-students {
+.containerr .content .content-2 .new-students {
     flex: 2;
     border-radius: 15px;
     background: white;
@@ -313,7 +314,7 @@ img:hover{
     flex-direction: column;
 }
 
-.container .content .content-2 .new-students table td:nth-child(1) img {
+.containerr .content .content-2 .new-students table td:nth-child(1) img {
     height: 40px;
     width: 40px;
 }
@@ -346,15 +347,15 @@ img:hover{
     .brand-name h1 {
         font-size: 16px;
     }
-    .container .content .cards {
+    .containerr .content .cards {
         justify-content: center;
     }
     .side-menu li img {
         width: 30px;
         height: 30px;
     }
-    .container .content .content-2 .recent-payments table th:nth-child(2),
-    .container .content .content-2 .recent-payments table td:nth-child(2) {
+    .containerr .content .content-2 .recent-payments table th:nth-child(2),
+    .containerr .content .content-2 .recent-payments table td:nth-child(2) {
         display: none;
     }
 }

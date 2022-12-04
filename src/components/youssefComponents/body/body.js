@@ -4,7 +4,7 @@ import '../../../App.css'
 function Body(props){
     return (
         <>
-        <div className="container">
+        <div className="containerr">
                  <div className="content">
                     {props.children}
                     </div>
