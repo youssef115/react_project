@@ -11,7 +11,7 @@ function BodyHeader (){
         <div className="containerr">
         <div className="header">
             <div className="nav">
-                <div className="search">
+                <div className="search1">
                     <input type="text" placeholder="Search.."/>
                     <button type="submit"><img src={require("../../.././res/images/search.png")} alt=""/></button>
                 </div>

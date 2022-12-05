@@ -21,7 +21,7 @@ function Cards(){
         <>
         <Suspense fallback={<>loading...</>}>
         <div className="cards">
-                <div className="card">
+                <div className="card1">
                     <div className="box">
                         <h1>{etudiant.number}</h1>
                         <h3>Etudiant</h3>
@@ -30,7 +30,7 @@ function Cards(){
                         <img src={require("../../.././res/images/students.png")} alt=""/>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card1">
                     <div className="box">
                         <h1>{enseignant.number}</h1>
                         <h3>Enseignant</h3>
@@ -42,7 +42,7 @@ function Cards(){
 
                 {/* the number of the school used in  */}
 
-                <div className="card">
+                <div className="card1">
                     <div className="box">
                         <h1>5</h1>
                         <h3>Groupe des Ecoles</h3>
@@ -54,7 +54,7 @@ function Cards(){
 
                 {/* here we the Income card */}
 
-                <div className="card">
+                <div className="card1">
                     <div className="box">
                         <h1>350000</h1>
                         <h3>Revenu</h3>

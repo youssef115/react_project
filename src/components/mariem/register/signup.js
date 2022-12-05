@@ -108,7 +108,7 @@ useEffect(() => {
       if (type == "enseignant") {
         const { nom, prenom, login, mot_de_passe, ncin, ntel, email, ville, specialite, fichier, reEnterPassword } = user
         if (nom && prenom && login && mot_de_passe && ncin && ntel && email && ville && specialite && fichier && reEnterPassword && (mot_de_passe === reEnterPassword)) {
-          axios.post("http://localhost:5000/enseigant/signup", user)
+          axios.post("http://localhost:5000/enseignant/signup", user)
             .then(res => {
               alert(res.data.message)
 
@@ -124,6 +124,7 @@ useEffect(() => {
           axios.post("http://localhost:5000/etudiant/signup", {...user,fichier:new FormData().append("file",userFile.current)})
             .then(res => {
               alert(res.data.message)
+              
              // history.push('/login');
             })
 

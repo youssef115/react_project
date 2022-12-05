@@ -49,7 +49,11 @@ const Login = () => {
           
       } else {
         axios.post("http://localhost:5000/etudiant/signin/", user)
-          .then(res => alert(res.data.message));
+          .then(res => {
+            console.log(res.data.token)
+            localStorage.setItem('token', res.data.token);
+            alert(res.data.message)});
+
 
 
       }

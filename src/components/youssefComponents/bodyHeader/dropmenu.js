@@ -43,7 +43,7 @@ function Dropmenu() {
           
         </div>
 
-        <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
+        <div className={`dropdown-menu1 ${open? 'active' : 'inactive'}`} >
           <h3>Admin<br/><span>youssef</span></h3>
           <ul>
             <Link to="/adminDashBorad/myProfil" onClick={()=>setOpen(!open)}><DropdownItem img={user} text = {"My Profile"} /></Link>
@@ -59,7 +59,7 @@ function Dropmenu() {
 function DropdownItem(props){
   return(
     <li className = 'dropdownItem'>
-      <img src={props.img}></img>
+      <img src={props.img}/>
       <p> {props.text} </p>
     </li>
   );

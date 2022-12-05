@@ -162,7 +162,7 @@ body.active-modal {
     
 }
 
-.modal, .overlay {
+.modall, .overlay {
     
     width: 100vw ;
     height: 120vh ;
@@ -176,7 +176,7 @@ body.active-modal {
 .overlay {
     background: rgba(49,49,49,0.8) ;
 }
-.modal-content {
+.modal-contenttt {
     
     position: absolute ;
     color:black;

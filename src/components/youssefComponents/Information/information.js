@@ -34,9 +34,9 @@ function Information (props){
         <>
         {console.log(user)}
         
-        <div className="modal">
+        <div className="modall">
         <div  className="overlay">
-        <div className="modal-content">
+        <div className="modal-contentt">
           <h2 className='center-title'>les information de {props.cin}</h2>
           <table>
             <tbody>

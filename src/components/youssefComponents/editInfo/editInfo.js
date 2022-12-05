@@ -116,9 +116,9 @@ function EditInfo(props) {
     <>
 
       {/* {console.log("data from edit user",user)} */}
-      <div className="modal">
+      <div className="modall">
         <div className="overlay">
-          <div className="modal-content">
+          <div className="modal-contenttt">
             <form onSubmit={e => handleSubmit(e)}>
               <div className="user-details ">
 

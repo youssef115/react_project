@@ -28,7 +28,7 @@ body.active-modal {
 .overlay {
     background: rgba(49,49,49,0.8) ;
 }
-.modal-content {
+.modal-contentt {
     
     position: absolute ;
     color:black;
@@ -48,7 +48,7 @@ body.active-modal {
     position: relative ;
     background: linear-gradient(135deg, #f05462, #9b59b6);
     color:white;
-    top: -35px ;
+    top: -20px ;
     right: 2px ;
     width: 60%;
     /* margin:18px 18px; */
@@ -93,6 +93,7 @@ body.active-modal {
 
 .download-file{
     margin-left:80%;
+    font-size: 13px;
     color:black;
     border:1px solid rgb(100, 173, 236);
     border-radius: 5px;
