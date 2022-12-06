@@ -45,7 +45,10 @@ const Login = () => {
       if (role == "enseignant") {
        
         axios.post("http://localhost:5000/enseignant/signin/", user)
-          .then(res => alert(res.data.message));
+          .then(res => {
+            console.log(res.data.token)
+            localStorage.setItem('token',res.data.token)
+            alert(res.data.message)});
           
       } else {
         axios.post("http://localhost:5000/etudiant/signin/", user)

@@ -12,12 +12,16 @@ import React, {useState, useEffect, useRef} from 'react';
 import { Link } from 'react-router-dom';
 
 function Dropmenu() {
-
-  let token = localStorage.getItem('token')
+  
+  try{
+    let token = localStorage.getItem('token')
   console.log("the token is ",token)
   
   var decoded = jwt_decode(token);
- 
+}catch(e){
+  decoded=null
+  console.error(e)
+}
 
 
   const [open, setOpen] = useState(false);
@@ -52,11 +56,11 @@ function Dropmenu() {
         </div>
 
         <div className={`dropdown-menu1 ${open? 'active' : 'inactive'}`} >
-          <h3>Admin<br/><span>{decoded.nom}</span></h3>
+          <h3>Admin<br/><span>{decoded==null?"null":decoded.nom}</span></h3>
           <ul>
             <Link to="/adminDashBorad/myProfil" onClick={()=>setOpen(!open)}><DropdownItem img={user} text = {"My Profile"} /></Link>
             <Link to="/adminDashBorad/editProfil" onClick={()=>setOpen(!open)}><DropdownItem img={edit} text = {"Edit Profile"}/></Link>
-            <Link to="/" onClick={()=>alert("you just logout now")}><DropdownItem img={logout} text = {"Logout"}/></Link>
+            <Link to="/" onClick={()=>{alert("you just logout now");localStorage.removeItem("token")}}><DropdownItem img={logout} text = {"Logout"}/></Link>
           </ul>
         </div>
       </div>
