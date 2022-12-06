@@ -24,8 +24,8 @@ function Information (props){
   }
   const handleRejeter=()=>{
     props.type==="isEnseignant"? 
-    axios.delete(`http://localhost:5000/enseignant/deleteEnseigant/${props.cin}`):
-    axios.delete(`http://localhost:5000/etudiant/deleteEtudiant/${props.cin}`)
+    axios.put(`http://localhost:5000/enseignant/rejectedUser/${props.cin}`):
+    axios.put(`http://localhost:5000/etudiant/rejectedUser/${props.cin}`)
     window.location.reload(false)
   }
   
@@ -71,9 +71,22 @@ function Information (props){
             <tr>
               {props.type==="isEnseignant"? <><td>Specialite :</td><td>{user.specialite}</td></>:<><td>classe :</td><td>{user.classe}</td></>}
             </tr>
-            <tr>
+            {/* <tr>
               <td>etat actuelle</td>
               <td style={user.etat?{color:"green"}:{color:"red"}}>{user.etat? "compte validé ":"compte non validé"}</td>
+            </tr> */}
+            {/* <tr>
+              <td>rejeté</td>
+              <td style={!user.rejected?{color:"green"}:{color:"red"}}>{user.rejected? "compte rejeté ":"compte non rejeté"}</td>
+            </tr> */}
+            <tr>
+              <td>{user.rejected?"rejeté":"etat actuelle"}</td>
+              {user.rejected?
+              <td style={user.rejected ?{color:"green"}:{color:"red"}}>{user.rejected? "compte rejeté ":"compte non rejeté"}</td>
+              :
+              <td style={user.etat?{color:"green"}:{color:"red"}}>{user.etat? "compte validé ":"compte non validé"}</td>
+              }
+              
             </tr>
             </tbody>
           </table>
@@ -81,8 +94,8 @@ function Information (props){
           <button className="close-modal" onClick={handleInfo}>
             CLOSE
           </button>
-          {user.etat?null:<button className='valid-modal' onClick={handleValidate}> valider</button>}
-          {user.etat?null:<button className='reject-modal' onClick={handleRejeter}> rejeter</button>}
+          {user.etat?null:user.rejected?null:<button className='valid-modal' onClick={handleValidate}> valider</button>}
+          {user.etat?null:user.rejected?null:<button className='reject-modal' onClick={handleRejeter}> rejeter</button>}
         </div>
         </div>
       </div>
