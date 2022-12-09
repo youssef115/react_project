@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 
 import './login.css';
 
 const Login = () => {
-
+  const navigate = useNavigate();
   const [user, setUser] = useState({ email: "", mot_de_passe: "" })
   const [role, setRole] = useState("etudiant");
   const [formErrors, setFormErrors] = useState({});
@@ -48,6 +49,17 @@ const Login = () => {
           .then(res => {
             console.log(res.data.token)
             localStorage.setItem('token',res.data.token)
+            axios.post("http://localhost:5000/enseignant/isAdmin",user)
+              .then(result=>{
+                console.log(result.data)
+                console.log("result.data.type ",result.data.type)
+                if(result.data.type==="admin"){
+                  console.log("try to navigate now")
+                  navigate("/adminDashBorad");
+                }else{
+                  navigate("#")
+                }
+              })
             alert(res.data.message)});
           
       } else {
