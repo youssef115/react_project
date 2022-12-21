@@ -1,0 +1,17 @@
+
+.modal-content22 {
+    
+    position:relative;
+    color:black;
+    font-weight:750;
+    top: 50% ; 
+    left: 50% ;
+    margin-top: 50px;
+    transform: translate(-50%, -50%) ;
+    line-height: 1 ;
+    background: #ffffff ;
+    padding: 12px 20px ;
+    border-radius: 15px ;
+    width: 600px ;
+    height: 1000px ;
+}

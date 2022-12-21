@@ -1,0 +1,223 @@
+.aPP{
+    
+    
+    text-align:left;
+    font-size: 15px;
+    background-size:cover;
+    position: relative;
+   
+
+    
+    
+}
+
+.tableee{
+  
+   margin-top: 8rem;
+   margin-left:28rem;
+   
+   background-color: rgb(240, 238, 238);
+   
+   box-shadow: 0 20px 15px 0 rgba(255, 255, 255, 0.999), 0 6px 2px 0 rgba(244, 234, 234, 0.982);
+   
+  
+  
+  
+}
+
+.hh6{
+    margin-top: 5rem;
+    margin-left:25rem;
+    display:flex;
+    color:#FFF;
+    align-items: center;
+    font-size: 30px;
+    justify-content: space-around;
+    padding: 18px 15px;
+    border-bottom: 5px solid #999;
+    
+    
+}
+.td1  {
+    text-align: left;
+    padding: 15px;
+    border-bottom:1px solid #bbb5b5;
+    word-break: break-all;
+    text-align: center;
+    
+}
+.th1{
+    text-align: center;
+    color: rgb(209, 14, 14);
+    padding: 8px;
+}
+.tr1:hover .td1 {
+    color : #d41e1e;
+    cursor: pointer;
+    background-color: #f6f9fc;
+
+}
+@media only screen and (max-width:1000px) {
+    .tableee {
+        grid-template-columns: repeat(1,1fr);
+     
+    }
+    .recent-grid {
+        grid-template-columns: 60% 40%;
+    } 
+}
+@media only screen and (max-width:900px) {
+    .tableee {
+      display: non;
+
+    }
+    .recent-grid {
+        grid-template-columns: 100%;
+    }
+    
+}
+
+@media only screen and (max-width:1000px) {
+    .hh6{
+        grid-template-columns: repeat(2,1fr);
+     
+    }
+    .recent-grid {
+        grid-template-columns: 60% 40%;
+    } 
+}
+@media only screen and (max-width:1000px) {
+    p {
+        grid-template-columns: 100%;
+    }
+    .recent-grid {
+        grid-template-columns: 100%;
+    }
+}
+.bt{
+    background: green;
+    color : #fff;
+    border-radius: 3px;
+    padding: 1px;
+    border-radius: 10px;
+    font-size: 7px;
+    padding: 1rem 2rem;
+    border:1px solid ;     
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.19)
+
+
+}
+
+.btn1{
+    background: red;
+
+    color : #fff;
+    border-radius: 3px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 7px;
+    padding: 1rem 2rem;
+    border:1px solid ;     
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.19)
+
+
+}
+/*******************detail***************/
+
+.detail{
+    margin-top: 12rem;
+    margin-left:45rem;
+    width: 90%;
+    max-width: 600px;
+    position: absolute;
+    background-color: rgb(214, 200, 200);
+    transform: translate(-50%, -50%);
+    background-color: rgb(214, 200, 200);
+    box-shadow: 0 20px 15px 0 rgba(255, 255, 255, 0.999), 0 6px 2px 0 rgba(244, 234, 234, 0.982);
+    border-radius: 10px;
+    font-size: 30px;
+   
+
+}
+.detail2{
+    margin-top: 2.5rem;
+    margin-left:45rem;
+    width: 90%;
+    max-width: 600px;
+    position: absolute;
+    background-color: rgb(214, 200, 200);
+    transform: translate(-50%, -50%);
+    background-color: rgb(214, 200, 200);
+    box-shadow: 0 20px 15px 0 rgba(255, 255, 255, 0.999), 0 6px 2px 0 rgba(244, 234, 234, 0.982);
+    border-radius: 10px;
+    font-size: 30px;
+    
+   
+
+}
+p{
+    margin-top: 5rem;
+    margin-left:25rem;
+    display:flex;
+    color:#FFF;
+    align-items:inherit;
+    font-size: 30px;
+    justify-content: space-around;
+    padding: 50 50px;
+    border-bottom: 5px solid #999;
+   
+    
+    
+    
+}
+
+.detail1{
+    margin-top: 15rem;
+    margin-left:45rem;
+    width: 90%;
+    max-width: 600px;
+    position: absolute;
+    background-color: rgb(214, 200, 200);
+    transform: translate(-50%, -50%);
+    background-color: rgb(214, 200, 200);
+    box-shadow: 0 20px 15px 0 rgba(255, 255, 255, 0.999), 0 6px 2px 0 rgba(244, 234, 234, 0.982);
+    border-radius: 10px;
+    font-size: 30px;
+   
+
+}
+
+.input1{
+   
+    background:#ffff;
+    margin: 20px 0;
+    width:90%;
+    border:0 ;
+    margin-top:4.5rem ;
+    margin-left: 20px;
+    outline: 0;
+    padding: 30px 50px ;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    
+    }
+
+    .adds1{
+        flex-basis: 48%;
+        background:red;
+        height: 50px;
+        width: 100px;
+        border-radius:20px ;
+        color:#ffff;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        margin-left: 240px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.19)
+    
+    
+    }
+  

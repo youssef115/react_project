@@ -1,0 +1,4 @@
+.main-content{
+    transition: margin-left 300ms;
+    margin-left: 345px;
+}

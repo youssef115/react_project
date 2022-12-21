@@ -1,0 +1,16 @@
+
+.modal-contentt20 {
+    
+    position:absolute;
+    color:black;
+    font-weight:50;
+    top:90%;
+    left: 50% ;
+    transform: translate(-50%, -80%) ;
+    line-height: 1 ;
+    background: #d5d0d0 ;
+    padding: 12px 20px ;
+    border-radius: 15px ;
+    width: 600px ;
+    height:700px ;
+}
