@@ -11,10 +11,10 @@ class AddSession extends Component{
 
 render(){
   return (
-    <div className='fond'>
+    <div className='fonddr'>
     <div className='newsession'>
         
-          <h4 className='h4'>Add new session</h4>
+          <h4 className='h44'>Add new session</h4>
           <SessForm 
             onSubmit={this.addSession}/>
 

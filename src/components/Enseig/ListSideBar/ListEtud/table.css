@@ -157,21 +157,7 @@
    
 
 }
-p{
-    margin-top: 5rem;
-    margin-left:25rem;
-    display:flex;
-    color:#FFF;
-    align-items:inherit;
-    font-size: 30px;
-    justify-content: space-around;
-    padding: 50 50px;
-    border-bottom: 5px solid #999;
-   
-    
-    
-    
-}
+
 
 .detail1{
     margin-top: 15rem;

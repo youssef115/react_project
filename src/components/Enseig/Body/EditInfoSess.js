@@ -24,8 +24,10 @@ function InfoEtudSess (props) {
   
   
    return(
-       <>
-       <div className="modal-contentt20">
+      
+        <div className="modall">
+        <div  className="overlay">
+        <div className="modal-contentt">
        <form >
        <div className="user-details ">
        <div className="input-box">
@@ -38,12 +40,11 @@ function InfoEtudSess (props) {
          </div>
          <div className="button-edit">
            <input type="submit" value="mettre a jour" onClick={handleUpdate}/>
-           
-
          </div>
          </form>
          </div>
-       </>
+       </div>
+       </div>
    )
 }
 

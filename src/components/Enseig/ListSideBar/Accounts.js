@@ -18,7 +18,7 @@ function Accounts  (props){
   },[])
   
     return(
-      <div className='fond'>
+      <div className='fonddr'>
           
         <div className="modal-content1">
         <h2 className='center-title1'>votre informations</h2>

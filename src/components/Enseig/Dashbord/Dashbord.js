@@ -7,7 +7,7 @@ import "./dash.css"
 export default function() {
   return (
   
-  <div className="main-content">
+  <div className="main-content122">
    <body>
    <Cards/>
    <CardsSession/>

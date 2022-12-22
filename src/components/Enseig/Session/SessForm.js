@@ -33,9 +33,9 @@ export default function SessForm(props) {
         render={props =>{
 
             return <Form>
-                <div className='color'>
+                <div className='coolor'>
                 <h5 className='h55'>Name  </h5>
-                 <input type="text"  required id="nom"  defaultValue={enseig.nomSession} onChange={handleChangeNom}/>
+                 <input className='inpputt' type="text"  required id="nom"  defaultValue={enseig.nomSession} onChange={handleChangeNom}/>
                  <ErrorMessage name="name"  /><br/>
                  <Link to="/DashBoradEnseig"><button  className='adds' type="submit" onClick={handleAdd}> Send</button></Link>
                 </div>

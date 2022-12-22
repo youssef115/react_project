@@ -1,4 +1,4 @@
-.fond{
+.fonddr{
     width: 100%;
     height: 150vh;
     background-image: linear-gradient(rgba(177, 177, 197, 0.8),rgba(73, 73, 180, 0.8)),url(./images.jpg);
@@ -19,7 +19,7 @@
     margin-left:22rem;
     color: #51228b;
 }
-.newsession .h4 {
+.newsession .h44 {
     font-size: 25px;
     color:black;
     margin-bottom: 90px;
@@ -27,7 +27,7 @@
     text-align: center;
 
 }
-.input{
+.inpputt{
    
 background:#ffff;
 margin: 15px 0;
@@ -68,7 +68,7 @@ font-size: 19px;
     cursor: pointer;
 
 }
-.color{
+.coolor{
     color: black;
     font-size:20px;
    
