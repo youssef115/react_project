@@ -12,7 +12,7 @@ function Etudiant(props){
                 <div className="recent-payments">
                     <div className="title">
                         <h2>{props.title}</h2>
-                        <a href="#" className="btn">Voir touts</a>
+                        <a href="#" className="btn11">Voir touts</a>
                     </div>
                     <table>
                       <thead>

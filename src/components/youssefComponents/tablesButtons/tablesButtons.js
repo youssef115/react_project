@@ -47,18 +47,18 @@ function TableButtons(props){
     return (
         <>
        
-        <button  className="btn1 fontawesomeView" onClick={()=>setShowInfo(!showInfo)}>
+        <button  className="btn11 fontawesomeView" onClick={()=>setShowInfo(!showInfo)}>
         
         <FontAwesomeIcon icon={faEye}/>
         </button>
         
-        <button  className="btn1 fontawesomeEdit" onClick={()=>setShowEdit(!showEdit)}>
+        <button  className="btn11 fontawesomeEdit" onClick={()=>setShowEdit(!showEdit)}>
           
           <FontAwesomeIcon icon={faPen}  />
          
         </button>
         
-        <button  className="btn1 " onClick={handleDelete}>
+        <button  className="btn11 " onClick={handleDelete}>
             <FontAwesomeIcon icon={faTrash}/>
             
         </button>

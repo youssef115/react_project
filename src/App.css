@@ -27,7 +27,7 @@ h3 {
 }
 p{color: black;}
 
-.btn1 {
+.btn11 {
     background: #f05462;
     color: white;
     padding: 3px 8px;
@@ -40,7 +40,7 @@ p{color: black;}
     
 }
 
-.btn1:hover {
+.btn11:hover {
     color: #f05462;
     background: white;
     padding: 3px 8px;
